@@ -1,0 +1,17 @@
+/**************\
+    Description
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.description {
+  max-width: 36.8125rem;
+  margin-inline: auto;
+
+  &__paragraph {
+    @include b.Open-Sans-Regular-20-150;
+    color: a.$col-white;
+    margin-bottom: a.$spacing-400;
+  }
+}

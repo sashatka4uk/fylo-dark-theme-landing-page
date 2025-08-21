@@ -1,0 +1,17 @@
+/**************\
+    Header
+\**************/
+@use "../abstracts" as a;
+@use "../base";
+@use "../components";
+
+.header {
+  background-color: a.$col-navy-850;
+  padding: a.$spacing-1000 0 a.$spacing-800;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

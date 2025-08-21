@@ -1,0 +1,16 @@
+/**************\
+    Feature
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.feature {
+  background-color: a.$col-navy-900;
+  padding-bottom: 146px;
+
+  &__inner {
+    max-width: 56.6875rem;
+    margin-inline: auto;
+  }
+}

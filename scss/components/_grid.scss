@@ -1,0 +1,36 @@
+/**************\
+    Grid
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(349px, 1fr));
+  //   grid-template-columns: auto auto;
+  column-gap: 160px;
+  row-gap: 80px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 28px;
+  }
+
+  &__heading {
+    @include b.Raleway-Bold-20-120;
+    color: a.$col-white;
+    margin-bottom: 8px;
+  }
+  &__text {
+    @include b.Open-Sans-Regular-14-150;
+    color: a.$col-white;
+  }
+}

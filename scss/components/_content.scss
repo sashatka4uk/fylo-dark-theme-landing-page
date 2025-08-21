@@ -1,0 +1,16 @@
+/**************\
+    Content
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.content {
+  text-align: center;
+
+  &__heading {
+    @include b.Raleway-Bold-40-120;
+    color: a.$col-white;
+    margin-bottom: a.$spacing-500;
+  }
+}

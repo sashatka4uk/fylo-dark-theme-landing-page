@@ -1,0 +1,45 @@
+/**************\
+    Testemonia;
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.testemonial {
+  background-color: a.$col-navy-900;
+  padding-bottom: 120px;
+  &__inner {
+    max-width: 74.25rem;
+    margin-inline: auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+  }
+
+  &__heading {
+    @include b.Raleway-Bold-40-120;
+    color: a.$col-white;
+    margin-bottom: 32px;
+  }
+
+  &__paragraphs {
+    @include b.Open-Sans-Regular-16-150;
+    color: a.$col-white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__cta {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    @include b.Open-Sans-Regular-16-150;
+    text-decoration: underline;
+    color: a.$col-neal-200;
+  }
+}

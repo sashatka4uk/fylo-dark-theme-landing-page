@@ -1,0 +1,20 @@
+/**************\
+    List
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.list {
+  display: flex;
+  column-gap: a.$spacing-700;
+
+  &__link {
+    @include b.Raleway-Regular-16-120;
+    color: a.$col-white;
+
+    &:hover {
+      @include b.Raleway-Bold-16-120;
+    }
+  }
+}

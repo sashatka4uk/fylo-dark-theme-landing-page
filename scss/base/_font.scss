@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Raleway Bold";
+  src: url(../../fonts/Raleway/Raleway-Bold.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url(../../fonts/Raleway/Raleway-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../../fonts/Open_Sans/OpenSans-Bold.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../../fonts/Open_Sans/OpenSans-Regular.woff2) format(woff2);
+}
+
+@mixin Raleway-Bold-40-120 {
+  font-family: "Raleway Bold";
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+
+@mixin Raleway-Bold-20-120 {
+  font-family: "Raleway Bold";
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+@mixin Raleway-Bold-16-120 {
+  font-family: "Raleway Bold";
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+@mixin Raleway-Regular-16-120 {
+  font-family: "Raleway Regular";
+  font-size: 1rem;
+  line-height: 120%;
+}
+@mixin Raleway-Bold-14-120 {
+  font-family: "Raleway Bold";
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+@mixin Raleway-Regular-12-120 {
+  font-family: "Raleway Regular";
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+@mixin Open-Sans-Regular-20-150 {
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+@mixin Open-Sans-Bold-16-150 {
+  font-family: "Open Sans Bold";
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+@mixin Open-Sans-Regular-16-150 {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+@mixin Open-Sans-Regular-14-150 {
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+@mixin Open-Sans-Bold-10-150 {
+  font-family: "Open Sans Bold";
+  font-size: 0.625rem;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+@mixin Open-Sans-Regular-10-180 {
+  font-family: "Open Sans Regular";
+  font-size: 0.625rem;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}
+
+@mixin Open-Sans-Regular-7-150 {
+  font-family: "Open Sans Regular";
+  font-size: 0.4375rem;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
