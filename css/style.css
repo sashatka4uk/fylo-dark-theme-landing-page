@@ -70,6 +70,9 @@ a {
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   border-radius: 28px;
 }
+.btn--small {
+  padding: 15.5px 32.5px;
+}
 
 /**************\
     Header
@@ -162,6 +165,95 @@ a {
   font-size: 0.875rem;
   line-height: 150%;
   color: #ffffff;
+}
+
+/**************\
+    Header
+\**************/
+/**************\
+   Author
+\**************/
+.author {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.author__img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.author__name {
+  font-family: "Open Sans Bold";
+  font-size: 0.625rem;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.author__job {
+  font-family: "Open Sans Regular";
+  font-size: 0.625rem;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/**************\
+    Header
+\**************/
+/**************\
+   Info 
+\**************/
+.info {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.info__location {
+  max-width: 379px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 16px;
+}
+.info__text {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+  line-height: 150%;
+  color: #ffffff;
+}
+.info__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.info__phone, .info__email {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.info__phone p, .info__email a {
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #ffffff;
+}
+.info__nav {
+  display: flex;
+  column-gap: 80px;
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+  line-height: 150%;
+}
+.info__nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.info__nav-item {
+  color: #ffffff;
+}
+.info__sotial {
+  display: flex;
+  column-gap: 16px;
 }
 
 .header {
@@ -257,8 +349,90 @@ a {
 /**************\
     Testemonials;
 \**************/
+.testemonials {
+  background-color: #181f2a;
+  padding-bottom: 110px;
+}
 .testemonials__inner {
+  padding: 0 41px;
+  display: flex;
+  column-gap: 40px;
+  position: relative;
+}
+.testemonials__inner::after {
+  content: url(../images/bg-quotes.png);
+  position: absolute;
+  width: 79px;
+  top: -35px;
+  left: 32px;
+  z-index: 1;
+}
+.testemonials__item {
   background-color: #202a3c;
+  padding: 33.5px 25.35px;
+  max-width: 360px;
+  border-radius: 4px;
+  z-index: 10;
+}
+.testemonials__text {
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/**************\
+   Cta  
+\**************/
+.cta {
+  background-color: #181f2a;
+}
+.cta__inner {
+  max-width: 863px;
+  padding: 49px 79.5px;
+  text-align: center;
+  background-color: #1c2431;
+  border-radius: 9px;
+}
+.cta__heading {
+  font-family: "Raleway Bold";
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.cta__text {
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.cta__form {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.cta__input {
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+  line-height: 150%;
+  padding: 13.5px 230px 13.5px 32px;
+  border: none;
+  border-radius: 24px;
+  max-width: 480px;
+}
+
+/**************\
+   Footer  
+\**************/
+.footer {
+  background-color: #0b1523;
+  padding: 162px 100px 56px 100px;
+}
+.footer__img {
+  margin-bottom: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

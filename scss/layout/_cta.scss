@@ -7,12 +7,15 @@
 
 .cta {
   background-color: a.$col-navy-900;
+
   &__inner {
     max-width: 863px;
     padding: 49px 79.5px;
     text-align: center;
     background-color: a.$col-navy-850;
     border-radius: 9px;
+    margin-bottom: -125px;
+    position: relative;
   }
 
   &__heading {

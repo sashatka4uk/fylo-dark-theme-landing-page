@@ -1,3 +1,12 @@
+/**************\
+    Header
+\**************/
+/**************\
+    Colors
+\**************/
+/**************\
+   Spacing
+\**************/
 @font-face {
   font-family: "Raleway Bold";
   src: url(../../fonts/Raleway/Raleway-Bold.woff2) format(woff2);
@@ -45,6 +54,9 @@ a {
 }
 
 /**************\
+    Header
+\**************/
+/**************\
     Btn
 \**************/
 .btn {
@@ -62,6 +74,9 @@ a {
   padding: 15.5px 32.5px;
 }
 
+/**************\
+    Header
+\**************/
 /**************\
     List
 \**************/
@@ -82,6 +97,9 @@ a {
 }
 
 /**************\
+    Header
+\**************/
+/**************\
     Content
 \**************/
 .content {
@@ -95,6 +113,9 @@ a {
   margin-bottom: 40px;
 }
 
+/**************\
+    Header
+\**************/
 /**************\
     Description
 \**************/
@@ -110,6 +131,9 @@ a {
   margin-bottom: 32px;
 }
 
+/**************\
+    Header
+\**************/
 /**************\
     Grid
 \**************/
@@ -144,6 +168,9 @@ a {
 }
 
 /**************\
+    Header
+\**************/
+/**************\
    Author
 \**************/
 .author {
@@ -172,6 +199,9 @@ a {
 }
 
 /**************\
+    Header
+\**************/
+/**************\
    Info 
 \**************/
 .info {
@@ -195,14 +225,12 @@ a {
   flex-direction: column;
   row-gap: 16px;
 }
-.info__phone,
-.info__email {
+.info__phone, .info__email {
   display: flex;
   align-items: center;
   column-gap: 24px;
 }
-.info__phone p,
-.info__email a {
+.info__phone p, .info__email a {
   font-family: "Open Sans Regular";
   font-size: 0.875rem;
   line-height: 150%;
@@ -366,6 +394,8 @@ a {
   text-align: center;
   background-color: #1c2431;
   border-radius: 9px;
+  margin-bottom: -125px;
+  position: relative;
 }
 .cta__heading {
   font-family: "Raleway Bold";
@@ -401,6 +431,7 @@ a {
 \**************/
 .footer {
   background-color: #0b1523;
+  padding: 162px 100px 56px 100px;
 }
 .footer__img {
   margin-bottom: 48px;
