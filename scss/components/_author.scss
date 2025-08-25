@@ -1,0 +1,28 @@
+/**************\
+   Author
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.author {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    @include b.Open-Sans-Bold-10-150;
+    color: a.$col-white;
+  }
+
+  &__job {
+    @include b.Open-Sans-Regular-10-180;
+    color: a.$col-white;
+  }
+}

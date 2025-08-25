@@ -1,0 +1,43 @@
+/**************\
+   Cta  
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.cta {
+  background-color: a.$col-navy-900;
+  &__inner {
+    max-width: 863px;
+    padding: 49px 79.5px;
+    text-align: center;
+    background-color: a.$col-navy-850;
+    border-radius: 9px;
+  }
+
+  &__heading {
+    @include b.Raleway-Bold-40-120;
+    color: a.$col-white;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    @include b.Open-Sans-Regular-14-150;
+    color: a.$col-white;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__input {
+    @include b.Open-Sans-Regular-14-150;
+    padding: 13.5px 230px 13.5px 32px;
+    border: none;
+    border-radius: 24px;
+    max-width: 480px;
+  }
+}

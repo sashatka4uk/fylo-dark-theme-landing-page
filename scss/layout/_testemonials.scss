@@ -1,0 +1,39 @@
+/**************\
+    Testemonials;
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.testemonials {
+  background-color: a.$col-navy-900;
+  padding-bottom: 110px;
+  &__inner {
+    padding: 0 41px;
+    display: flex;
+    column-gap: 40px;
+    position: relative;
+    &::after {
+      content: url(../images/bg-quotes.png);
+      position: absolute;
+      width: 79px;
+      top: -35px;
+      left: 32px;
+      z-index: 1;
+    }
+  }
+
+  &__item {
+    background-color: a.$col-navy-800;
+    padding: 33.5px 25.35px;
+    max-width: 360px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  &__text {
+    @include b.Open-Sans-Regular-14-150;
+    color: a.$col-white;
+    margin-bottom: 24px;
+  }
+}

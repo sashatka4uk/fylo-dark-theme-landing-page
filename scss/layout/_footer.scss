@@ -1,0 +1,13 @@
+/**************\
+   Footer  
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.footer {
+  background-color: a.$col-navy-950;
+  &__img {
+    margin-bottom: 48px;
+  }
+}

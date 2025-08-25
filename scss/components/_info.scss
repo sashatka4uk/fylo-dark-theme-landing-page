@@ -1,0 +1,61 @@
+/**************\
+   Info 
+\**************/
+
+@use "../abstracts" as a;
+@use "../base" as b;
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+
+  &__location {
+    max-width: 379px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+  }
+
+  &__text {
+    @include b.Open-Sans-Regular-16-150;
+    color: a.$col-white;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__phone,
+  &__email {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__phone p,
+  &__email a {
+    @include b.Open-Sans-Regular-14-150;
+    color: a.$col-white;
+  }
+
+  &__nav {
+    display: flex;
+    column-gap: 80px;
+    @include b.Open-Sans-Regular-16-150;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &__nav-item {
+    color: a.$col-white;
+  }
+
+  &__sotial {
+    display: flex;
+    column-gap: 16px;
+  }
+}
